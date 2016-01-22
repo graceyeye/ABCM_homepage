@@ -1,0 +1,29 @@
+<script>
+
+	var sp = ['mobile','android','iphone','ipad'];
+
+	for(var i in sp){
+		if(navigator.userAgent.toLowerCase().match(
+				new RegExp(sp[i]))	){
+			location.href='m/main.jsp'
+			break;
+		}else{
+			//location.href='main.do'; //main.do 로 리턴해준 값으로 간다
+			location.href='main.jsp';
+			break;
+		}
+		
+	}
+	
+/*  
+ var filter = "win16|win32|win64|mac";    
+	if( navigator.platform  ){       
+		if( filter.indexOf(navigator.platform.toLowerCase())<0 ){   
+			alert("모바일 기기에서 접속");       
+			
+		}else{          
+			alert("PC에서 접속");     
+			}  
+		} */
+	
+</script>

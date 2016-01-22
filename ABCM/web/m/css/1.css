@@ -1,0 +1,428 @@
+@CHARSET "EUC-KR";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+* {
+	margin:0;
+	padding:0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+li {
+	list-style: none;
+}
+/* 전체DIV */
+#wrap {
+	width: 100%;
+	/* 1900px */
+	margin: 0 auto;
+	min-width: 1000px;
+	/* 포지션 absolute로 0,0맞춤 */
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+/*--------------------------------  센터  -------------------------------- */
+#center {
+	/* 포지션 relative로 안쪽 텍스트만 움직이도록 함 */
+	position: relative;
+	width: 1000px;
+	min-width: 1000px;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+/*--------------------------------  백그라운드 -------------------------------- */
+#bg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -10;
+	width:100%;
+}
+
+/*헤더  */
+#bg_header {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 105px;
+	width: 100%;
+	opacity:0.8;
+	background-color: white;
+}
+
+
+/* #bg_iqp
+{
+	position: absolute;
+	height: 455px; 
+	background-color: #F0F0F0;  
+	width:100%;
+		
+	
+} */
+
+
+
+/*------------------백그라운드----------------  */
+
+/*--------------------------이미지-------------------  */
+
+#QVI > h1
+{
+		font-size :  43px;
+		font-weight:200;
+		font-family: 'Times New Roman', Times, serif; 
+
+}
+
+#QVI > h4
+{
+	font-weight:200;
+	font-family: '나눔고딕', 'Nanum Gothic', sans-serif;
+}
+
+/*--------------------------이미지-------------------  */
+#header {
+	opacity: 0.9;
+	z-index: 102;
+	margin: 0 auto;
+}
+
+/*up_ul 한국어,영어 선택  */
+#header>#up_ul {
+	position: absolute;
+	top: 0px;
+	right: 0px; /* down_ul의 right와 값 같아야함 */
+}
+
+#header>#up_ul>li {
+	float: left;
+}
+
+#header>#up_ul>li>a {
+	padding: 4px 17px; /* 글자 박스의 넓이 */
+	font-size: 50%;
+	font-family: '나눔고딕', 'Nanum Gothic', sans-serif;
+	color: white;
+	margin-left: 1px; /* 글자사이간 넓이 */
+	background-color: #244978;
+}
+
+#header>#up_ul>li:first-child>a {
+	border-radius: 0 0 0 5px;
+}
+
+#header>#up_ul>li:last-child>a {
+	border-radius: 0 0 5px 0;
+}
+
+/*--------------------------------  한국어, 영어선택종료 / 회사소개, 투자철학 ㅅ작-------------------------------- */
+
+#header>#down_ul {
+	position: absolute;
+	top: 65px;
+	right: 30px;
+}
+
+#header>#down_ul>li {
+	float: left;
+}
+
+#header>#down_ul>li>a {
+	font-size: 90%;
+	font-weight:500;
+	font-family: '나눔고딕', 'Nanum Gothic', sans-serif;
+	margin-left: 50px; /* 글자사이간 넓이 */
+	color:white;
+	
+	
+/* 	width: 150px;
+	height: 40px;
+	background-color: red;
+	padding-bottom: 8px; */
+	
+}
+
+
+
+#header > a 
+{
+	position:absolute;
+	margin-top: 15px;
+
+	
+}
+
+
+
+/* 메뉴 hover */
+#down_ul a:hover
+{
+
+	text-decoration: underline;
+	background-image:url("img/zz.png");
+
+	
+}
+
+
+/*--------------------------이미지-------------------  */
+
+#header_down
+{
+		position:relative;
+		top:40px;
+		
+	
+}
+#header_down > h1
+{
+		font-size :  38px;
+		font-weight:200;
+		font-family: '나눔고딕', 'Nanum Gothic', sans-serif;
+		text-align: center; 
+		
+		
+
+}
+
+
+
+/* -------------------------안의내용------------------ */
+
+#intro
+{
+	position:relative;
+	font-family: '나눔고딕', 'Nanum Gothic', sans-serif;
+	font-size: 13.5px;
+	line-height: 160%;
+	letter-spacing:0.1mm;
+	
+	
+}
+
+/* 개요 */
+.a1
+{
+	position: relative;
+	margin-left:100px;
+	margin-right:100px;
+}
+
+
+/* 경영이념 */
+#a21
+{
+	position: relative;
+	margin-left:150px;
+	margin-right:150px;
+	
+}
+
+#a22
+{
+	position: relative;
+	margin-left:150px;
+	margin-right:150px;
+}
+
+
+#a32
+{
+	position: absolute;
+	width:300px;
+	height:440px;
+	left:420px;
+	top:213px;
+
+}
+
+
+#a41
+{
+	position: relative;
+	margin-left:250px;
+	margin-right:250px;
+	font-size: 13px;
+	font-weight: 500;
+	
+	line-height:190%;
+	letter-spacing:0.3px;
+	
+
+}
+
+#a42
+{
+	position: relative;
+	margin-left:250px;
+	margin-right:250px;
+	font-size: 13px;
+	font-weight: 500;
+	line-height:190%;
+	letter-spacing:0.3px;
+	
+
+}
+
+#b21, #b22, #b23	
+{
+	position: relative;
+	margin-left:100px;
+	font-size: 13.5px;	
+	line-height:190%;
+	letter-spacing:0.3px;
+	font-weight: 300;
+	margin-right:100px;
+
+}
+
+#c11
+{
+	position: absolute;
+	margin-left:190px;
+	margin-right:190px;
+	top:78px;
+	/*1,2번항목 사이의 간격  */
+	font-size: 13px;
+}
+
+/* #c12
+{
+	position: absolute;
+	left:280px;
+	top:270px;
+
+} */
+
+
+#d11
+{
+	position: absolute;
+	left:255px;
+	top:78px;
+	font-size: 13px;
+	/*1,2번항목 사이의 간격 (투자일일,투자기간) */
+	
+	
+		
+}
+
+/* #d12
+{
+	position: absolute;
+	left:280px;
+	top:270px;
+
+} */
+
+#d12>h5
+{
+	font-weight: lighter;
+}
+
+
+#Seoul
+{
+	 width: 610px; 
+	 height:300px; 
+	 margin:0 auto;
+	
+}
+
+/* 구글맵 들어갈곳 */
+#map
+{
+   width: 410px;
+   height: 288px;
+   background: yellow;
+
+}
+
+/* ----------------------------한글소개------------------------------ */
+
+/* #iqp 
+{
+	position: relative;
+	
+}
+
+
+#iqp > img
+{
+	position:absolute;
+	margin:0 auto;		
+	z-index: -100;
+}
+
+
+
+
+#iqp > #iqp_1
+{
+	font-size: 68%;
+	width:200px;
+	height:230px;
+	position:absolute;
+	left:95px;
+	top:145px;
+	font-family: '나눔고딕', 'Nanum Gothic', sans-serif;
+	font-weight: 500;
+	
+}
+
+#iqp > #iqp_2
+{
+	font-size: 68%;
+	width:200px;
+	height:230px;
+	position:absolute;
+	left:430px;
+	top:145px;
+	font-family: '나눔고딕', 'Nanum Gothic', sans-serif;
+	font-weight: 500;
+}
+
+#iqp > #iqp_3
+{
+	font-size: 68%;
+	width:200px;
+	height:230px;
+	position:absolute;
+	left:760px;
+	top:145px;
+	font-family: '나눔고딕', 'Nanum Gothic', sans-serif;
+	font-weight: 500;
+}
+
+
+ */
+
+
+/*--------------------------------  푸터 -------------------------------- */
+
+#footer{
+
+ 	margin: 0 auto; 
+
+}
+
+#footer> img
+{	position:absolute;	
+	margin-left: 0px;
+	
+}
+
+#footer> h5
+{	margin:0 auto;
+	position:absolute;
+	bottom: 17px;
+	right:0px;
+	font-size: 70%;
+}
+

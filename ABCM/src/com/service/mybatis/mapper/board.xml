@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.service.mybatis.mapper.BoardMapper">
+
+	<select id="selectAllBoard" resultType="board">
+		SELECT * FROM BOARD order by regdate desc;
+	</select>
+	
+	<insert id="insertBoard"
+	parameterType="board"
+	>
+	    INSERT INTO BOARD(title,writer,contents,photo,regdate) VALUES(#{title},#{writer},#{contents},#{photo},#{regdate})
+	</insert>
+
+		<select id="selectBoard" resultType="board">
+		SELECT * FROM BOARD WHERE SEQ = #{seq}
+	</select>
+
+	<delete id="deleteBoard" parameterType="string">
+		DELETE FROM BOARD WHERE SEQ = #{seq}
+	</delete>
+	
+	<update id ="updateBoard" parameterType="board">
+		update board set title=#{title}, writer=#{writer} , contents=#{contents}, photo=#{photo},regdate=#{regdate} where seq=#{seq};
+	</update>
+</mapper>

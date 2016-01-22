@@ -1,0 +1,171 @@
+@CHARSET "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif|Righteous);/* 구글에서 긁어온거 */
+
+/* Global CSS Start */
+*{
+	margin:0;
+	padding:0;
+}
+
+a{
+	text-decoration: none;
+	color:black;	
+}
+
+li
+{
+	list-style: none;
+}
+
+/* 후에 들어올 이미지들 불러올 센터  */
+.center{
+	margin:0 auto;
+	position: relative;
+	text-align:center;	
+	width:1900px;
+	
+	
+}
+.center>.up{
+	margin:0 auto;
+	position: relative;
+	text-align:center;	
+	width:1900px;
+	
+	
+}
+
+
+
+/* Global CSS End */
+
+header
+{
+background: pink;
+ margin: 0 auto; 
+ position: relative;
+  width: 1900px;
+}
+
+header>#top_area{
+	
+	 width: 1900px;/* 현재 화면사이즈의 100% 노랑색 */
+	height: 100px;
+	opacity:0.9;
+	position: fixed;
+	z-index:102;
+	
+}
+
+header>#top_area > #top_nav{
+	margin:0 auto;
+	background-color: white; /* 헤더의 색깔 */
+	height: 100px;
+	position:relative;
+
+}
+
+header>#top_area > #top_nav > #up_ul
+{
+	position :absolute;
+	top:0px;
+	right:450px;	 /* down_ul의 right와 값 같아야함 */
+}
+
+header>#top_area > #top_nav > #up_ul >li
+{
+	float:left;
+}
+
+/* 영어/한국어 선택 */
+header>#top_area > #top_nav > #up_ul >li >a
+{
+	padding: 4px 17px; /* 글자 박스의 넓이 */
+	font-size:50%;
+	font-family: 'Righteous', cursive;
+	color: white;
+	margin-left: 1px; /* 글자사이간 넓이 */
+	
+	background-color: #244978;
+}
+
+
+header>#top_area > #top_nav > #up_ul >li:first-child > a
+{
+border-radius:0 0 0 5px;
+}
+
+header>#top_area > #top_nav > #up_ul >li:last-child >a
+{
+border-radius: 0 0 5px 0;
+}
+
+/* */
+/* 회사소개 ,투자철학,투자자안내,공지사항 */
+
+header>#top_area> #top_nav > #down_ul
+{
+	position:absolute;
+	bottom: 20px;
+	right:470px;	
+		
+}
+
+header>#top_area> #top_nav > #down_ul >li
+{
+	float: left;
+}
+
+header>#top_area > #top_nav > #down_ul >li >a
+{
+
+	font-size:90%;
+	font-family: 'Righteous', cursive;
+	margin-left: 45px; /* 글자사이간 넓이 */
+	
+}
+
+
+header>#top_area> #top_nav > a 
+{
+	position:absolute;
+	margin-left: 450px;
+	margin-top: 20px;
+}
+/* */
+
+
+
+section{	
+	width:100%;	
+	/* background:gray; */
+	margin:0 auto;
+/* 	padding-top:100px; */
+	padding-bottom:0px;
+	
+}
+
+footer{
+	position:relative;
+	width:1900px;
+	height:84px;
+	background:#fafafa;	
+ 	margin: 0 auto; 
+
+
+}
+
+footer>img
+{	position:relative;	
+	margin-left: 450px;
+	
+}
+
+footer>div>h5
+{	margin:0 auto;
+	position:absolute;
+	bottom: 15px;
+	right:450px;
+	font-size: 70%;
+}
+

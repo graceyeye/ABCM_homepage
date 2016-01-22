@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+ 	<typeAliases>
+ 		<typeAlias type="com.service.vo.Cust" alias="cust"/>
+ 		<typeAlias type="com.service.vo.Board" alias="board"/>
+ 	</typeAliases>
+ 	
+ 	<mappers>
+ 		<mapper resource="com/service/mybatis/mapper/cust.xml"/>
+ 		<mapper resource="com/service/mybatis/mapper/board.xml"/>
+ 	</mappers>
+</configuration>
+
+
+
+
+
+
+
+
+
+

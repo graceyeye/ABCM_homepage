@@ -1,0 +1,160 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0
+}
+
+body {
+	font: 11px Verdana, Arial;
+	color: #000;
+	background: white;
+}
+
+
+/* 상단 바 */
+.nav {
+	height: 36px;
+	background: white;
+	color: #fff;
+	text-shadow: 1px 1px #888;
+	z-index: 1000
+}
+
+
+/* 링크들 */
+.menu a {
+	float: left;
+	color: gray;
+	text-decoration: none;
+	width: 350px;
+	height: 28px;
+	padding-top: 8px
+}
+/* span : 줄안바꾸고 그냥 링크중 하나. Two의 안쪽블록에 해당됨 해당됨 
+width를 넓히면 위쪽 바 넓이 넓어짐 Two는 Span 신경쓰지말긔
+*/
+.menu span {
+	float: left;
+	color: #eee;
+	text-decoration: none;
+	width: 350px;
+	height: 28px;
+	padding-top: 8px
+}
+
+
+/* 위쪽 배너부분에 손댈경우 black으로 글씨 변함 */
+.menu a:hover {
+	color: black;
+}
+
+/* 윗단의 넓이 상관 X */
+.menu {
+	list-style: none;
+	font: 16px Arial, Verdana;
+	text-align: center;
+	width: 600px;
+	margin: 0 auto
+}
+
+
+/* Home, One ,Two */
+.menu li {
+	position: relative;
+	float: left;
+	width: 350px;
+	z-index: 1000
+}
+
+/* Home, One ,Two 의 드롭다운 메뉴들*/
+.menu ul {
+	display: none;
+	position: absolute;
+	font-family: '나눔고딕', 'Nanum Gothic', sans-serif;
+	font-size:40px;
+	/* 얼마나 떨어져 있니? */
+	top: 36px;
+	left: 0;
+	background: white;
+	display: none;
+	list-style: none;
+	letter-spacing :1px;
+
+	
+}
+
+/* 하나더 */
+.menu ul li {
+	float: none;
+	border-top:black;
+	width: 350px
+}
+
+
+/* Home, One ,Two 의 드롭다운 메뉴들의 hover (span 제외)*/
+.menu ul li a, li.menuhover li a, li.menuhover li.menuhover li a {
+	float: none;
+	display: block;
+	background: #F6F6F6;
+	
+	/* 밑으로 얼마나 내려 올꺼니? 얼마나 긴지.... 여기서 border 도 조절한다.*/
+	height: 170px;
+	border-top : 3px solid white ;
+	top:2px;
+	
+	
+	
+}
+
+.menu ul li a:hover, li.menuhover li a:hover, li.menuhover li.menuhover li a:hover
+	{
+	background: white;
+	color: black;
+	font-weight: 800;
+}
+
+
+/* Home, One ,Two 의 드롭다운 메뉴들의 hover (그중에 span들만) */
+.menu ul li span, li.menuhover li span, li.menuhover li.menuhover li span
+	{
+	float: none;
+	display: block;
+	background: none;
+	height: 100px;
+	padding-top: 5px
+}
+
+/* 얜머지 */
+.menu ul ul {
+	left: 350px;
+	top: 0
+}
+
+/* one의 three */
+
+.menu li.submenu {
+/* 	font-weight: bold */
+}
+
+.menu li.noborder {
+	border-top : 1px solid black ;
+	
+}
+
+
+/* /* 드롭다운시 안의 글씨들 three만*/
+li.menuhover a, li.menuhover li.menuhover a {
+	color: black;
+	background: white;
+	text-align: center;
+	padding-top: 5px;
+	border-top : 1px solid black ;
+
+	
+}
+
+li.menuhover span, li.menuhover li.menuhover span {
+	color: #fff;
+	background: white
+}
+
